@@ -1,0 +1,12 @@
+// @each $degisken in $dizi{
+    // kod bloğu
+ // }
+
+
+ $dizi : 1,2,3,4,5;
+
+ @each $i in $dizi {
+    .item-#{$i}{
+        font-size:  $i * 10px;
+    }
+ }

@@ -1,0 +1,25 @@
+{
+  "name": "sass-dersleri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudemir34/Sass-Dersleri.git"
+  },
+  "keywords": [
+    "Sumeyye:3447"
+  ],
+  "author": "sudemir34",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudemir34/Sass-Dersleri/issues"
+  },
+  "homepage": "https://github.com/sudemir34/Sass-Dersleri#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

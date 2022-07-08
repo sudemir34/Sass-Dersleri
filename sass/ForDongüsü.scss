@@ -1,0 +1,14 @@
+// Kullanımı;
+// @for $degisken from (başlangıç değeri) through (son deger){
+    // css özellik ve değerleri
+// } 
+
+
+@for $i from 1 through 5 {
+    .item-#{$i} {
+        width: 100px *$i;
+        padding: 20px;
+        background-color: aliceblue;
+        margin-bottom: 5px;
+    }
+}

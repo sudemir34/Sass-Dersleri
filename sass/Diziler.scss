@@ -1,0 +1,17 @@
+// $dziler : $değişken1, $değişken2, ....;
+// nth($diziler, $değişkenler);
+
+$yellow: yellow;
+$white : white;
+$red : red;
+$grey: grey;
+$green: green;
+
+$dizi : $yellow, $white, $red, $grey, $green;
+
+@for $i from 1 through length($dizi) {
+    .item-#{$i}{
+        background-color: nth($dizi, $i);
+    }
+
+}

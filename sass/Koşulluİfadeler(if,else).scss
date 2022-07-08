@@ -1,0 +1,25 @@
+$size : 5;
+$padding : 10px;
+$black : black;
+$white: white;
+$crimson : crimson;  
+$blue: rgba(233, 228, 181, 0.534);
+
+p{
+    @if($size == 6){
+        padding: $padding;
+        color: $black;
+        background-color: $black;
+    }
+    @else if($size<=4){
+        padding: $padding;
+        color: $black;
+        background-color: $white;
+    }
+    @else{
+        background-color: $blue ;
+        padding: $padding;
+        color: $crimson;
+        margin: 10px
+    }
+}

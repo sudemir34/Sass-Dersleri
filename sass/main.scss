@@ -1,0 +1,83 @@
+@import "reset.scss";
+@import "mixin.scss";
+@import "Koşulluİfadeler\(if\,else\).scss";
+@import "ForDongüsü.scss";
+@import "Diziler.scss";
+@import "EachDongusu.scss";
+
+
+// Miras alma - Extend
+.egim{
+    transition: 300ms all;
+}
+
+.container{
+    width: 400px;
+    background-color: aliceblue;
+    border:  3px;
+    padding: 30px;
+    margin-bottom: 30px;
+    @include border-radius(20px);
+
+    .login-header{
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    
+    }
+    .login-content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        & input{
+            height: 50px;
+            padding: 0 20px;
+            border: 1px solid gray;
+            margin: 10px;
+        }
+    }
+    .login-footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        @extend .egim;
+
+        & a{
+            color: rgb(31, 29, 29);
+        
+        }
+        & a:nth-child(2):hover{
+            color: rgb(163, 36, 36);
+        
+        }
+        & a:first-child{
+            background-color:rgb(164, 223, 203);
+            width: 90px;
+            height: 40px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            @extend .egim;
+        
+        }
+        & a:first-child:hover{
+            background-color: rgb(116, 161, 147);
+        
+        }
+    }
+
+}
+
+.signup a{
+    display: block;
+    color: black;
+    transition: 300ms all;
+
+}
+.signup a:hover{
+    text-decoration: underline;
+}
